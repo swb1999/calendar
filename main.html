@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<div class="wrap">
+		<header class="header">活力5星</header>
+		<div class="item">
+			 <ul>
+               <li>
+	               	<div><p><i class="iconfont icon-shouye"></i><span>我的位置</span></p><p><i class="iconfont icon-didian"></i><br/><span>我的位置</span></p></div>
+	               	<div><i class="iconfont icon-angle-right"></i></div>
+               </li>
+               <li id="btn">
+	               	<div>
+	               		<p><i class="iconfont icon-tian"></i></p>
+	               		<p>
+	               			<span id="data_in">2015-04-27</span><span id="new">今天</span><br>
+	               			<span id="data_out">2015-04-27</span><span id="temp">明天</span>
+	               		</p>
+	               	</div>
+	               	<div><span id="night">共5晚</span><i class="iconfont icon-angle-right"></i></div>
+               </li>
+               <li>
+	               	<div><p><i class="iconfont icon-fangdajing"></i><span>关键字/位置/品牌</span></p></div>
+	               	<div><i class="iconfont icon-angle-right"></i></div>
+               </li>
+               <li>
+	               	<div><p><i class="iconfont icon-zhifu-01"></i><span>价格星级</span></p></div>
+	               	<div><i class="iconfont icon-angle-right"></i></div>
+               </li>
+               <li><button type="button">搜索</button></li>
+            </ul>
+		</div>
+	</div>
+	<script src="js/main.js"></script>
+	<script src="js/addZero.js"></script>
+	<script>
+		document.documentElement.style.fontSize = document.documentElement.clientWidth/375*100+"px";
+		window.onresize=function(){
+			document.documentElement.style.fontSize = document.documentElement.clientWidth/375*100+"px";
+		}
+		new getTime();
+	</script>
+</body>
+</html>

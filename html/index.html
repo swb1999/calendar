@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+	<title>Document</title>
+	<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+	<div class="wrap">
+		<header class="header">出行时间</header>
+		<div class="item" id="item"></div>
+	</div>
+	<script src="../js/addZero.js"></script>
+	<script src="../js/calendar.js"></script>
+	<script>
+		document.documentElement.style.fontSize = document.documentElement.clientWidth/375*100+"px";
+		window.onresize=function(){
+			document.documentElement.style.fontSize = document.documentElement.clientWidth/375*100+"px";
+		}
+		new calendar({
+			quantity:3,
+			target:"#item"
+		})
+	</script>
+</body>
+</html>
